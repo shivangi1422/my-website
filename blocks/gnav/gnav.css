@@ -346,7 +346,6 @@ header .gnav {
     font-size: 14px;
     font-family: 'adobe-clean';
     outline: none !important;
-    -webkit-appearance: none;
     box-sizing: border-box;
     transition: border-color 130ms ease-in-out, box-shadow 130ms ease-in-out;
   }
