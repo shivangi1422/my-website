@@ -25,7 +25,8 @@
 }
 
 .cards > ul > li img {
-  height: auto;
-  width: 120px;
-  
+  display: block;
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
 }
