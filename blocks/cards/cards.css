@@ -1,8 +1,8 @@
 .cards > ul {
   list-style: none;
   margin: 0;
-  padding: 0;
-  display: flex;
+  padding: 30px;
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 16px;
 }
@@ -12,21 +12,58 @@
   background-color: var(--background-color)
 }
 
+.cards > ul > li > p {
+  padding-bottom: 50 px;
+  text-align: center;
+}
 .cards .cards-card-body {
   margin: 16px;
 }
 
 .cards .cards-card-image {
   padding-bottom: 30px;
+  display:block;
+  width: auto;
+  height: auto;
 }
 
 .cards .cards-card-body > *:first-child {
   margin-top: 0;
 }
 
-.cards > ul > li img {
-  display: block;
+.cards .cards-card-body .button-container {
+  bottom: 30px;
   width: 100%;
-  height: 18rem;
-  object-fit: cover;
+  left: 0;
+  padding-top: 30px;
+}
+.cards .cards-card-body .button {
+  background: #fff;
+  border: 2px solid #000;
+  color: #000;
+      -webkit-appearance: none;
+    border-radius: 5px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Brown-Ald,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0;
+    padding: 0.8em 1.3em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background .3s;
+    vertical-align: middle;
+    width: auto;
+}
+
+.cards > ul > li img {
+  padding-bottom: 30px;
+  display:block;
+  width: auto;
+  height: auto;
 }
