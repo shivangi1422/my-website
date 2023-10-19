@@ -41,24 +41,23 @@
   background: #fff;
   border: 2px solid #000;
   color: #000;
-      -webkit-appearance: none;
-    border-radius: 5px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Brown-Ald,Helvetica,Arial,sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 100%;
-    margin: 0;
-    padding: 0.8em 1.3em;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: background .3s;
-    vertical-align: middle;
-    width: auto;
+  border-radius: 5px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Brown-Ald,Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 0;
+  padding: 0.8em 1.3em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background .3s;
+  vertical-align: middle;
+  width: auto;
 }
 
 .cards > ul > li img {
