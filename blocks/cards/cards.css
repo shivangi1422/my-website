@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 16px;
+  text-align: center;
 }
 
 .cards > ul > li {
@@ -20,6 +21,9 @@
   margin: 16px;
 }
 
+.cards .cards-card-body > p {
+  padding: 0.6em 0;
+}
 .cards .cards-card-image {
   padding-bottom: 30px;
   display:block;
@@ -60,6 +64,10 @@
   width: auto;
 }
 
+.cards .cards-card-body .button:hover {
+  background: #000;
+  color: #fff;
+}
 .cards > ul > li img {
   padding-bottom: 30px;
   display:block;
