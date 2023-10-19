@@ -2,7 +2,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 16px;
 }
@@ -17,7 +17,7 @@
 }
 
 .cards .cards-card-image {
-  line-height: 0;
+  padding-bottom: 30px;
 }
 
 .cards .cards-card-body > *:first-child {
@@ -25,7 +25,7 @@
 }
 
 .cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: auto;
+  width: 120px;
+  
 }
