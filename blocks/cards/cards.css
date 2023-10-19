@@ -25,10 +25,7 @@
   padding: 0.6em 0;
 }
 .cards .cards-card-image {
-  padding-bottom: 30px;
-  display:block;
-  width: auto;
-  height: auto;
+  line-height: 0;
 }
 
 .cards .cards-card-body > *:first-child {
@@ -70,7 +67,8 @@
 }
 .cards > ul > li img {
   padding-bottom: 30px;
-  display:block;
-  width: auto;
+  padding-top: 30px;
+  display: inline;
+  width: 120px;
   height: auto;
 }
