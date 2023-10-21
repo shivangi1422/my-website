@@ -1,25 +1,18 @@
 .cards > div {
   list-style: none;
   margin: 0;
-  padding: 30px;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 16px;
-  text-align: center;
 }
 
 .cards > div > div {
   border: 1px solid var(--highlight-background-color);
-  background-color: var(--background-color);
-  padding-bottom: 90px;
-  position:relative;
+  background-color: var(--background-color)
 }
 
-.cards > div > div > p {
-  padding-bottom: 10 px;
-  text-align: center;
-}
-.cards .text {
+.cards .cards-card-body {
   margin: 16px;
 }
 
@@ -27,47 +20,12 @@
   line-height: 0;
 }
 
-.cards .text > *:first-child {
+.cards .cards-card-body > *:first-child {
   margin-top: 0;
 }
 
-.cards .text .button-container {
-  bottom: 30px;
-  position:absolute;
-  width: 100%;
-  left: 0;
-}
-.cards .text .button {
-  background: #fff;
-  border: 2px solid #000;
-  color: #000;
-  border-radius: 5px;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Brown-Ald,Helvetica,Arial,sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 100%;
-  margin: 0;
-  padding: 0.8em 1.3em;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: background .3s;
-  vertical-align: middle;
-  width: auto;
-}
-
-.cards .text .button:hover {
-  background: #000;
-  color: #fff;
-}
 .cards > div > div img {
-  padding-top: 30px;
-  padding-bottom: 10px;
-  display: inline;
-  width: 120px;
-  height: auto;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
