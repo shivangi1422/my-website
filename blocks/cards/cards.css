@@ -1,4 +1,4 @@
-.cards > ul {
+.cards > div {
   list-style: none;
   margin: 0;
   padding: 30px;
@@ -8,37 +8,36 @@
   text-align: center;
 }
 
-.cards > ul > li {
+.cards > div > div {
   border: 1px solid var(--highlight-background-color);
-  background-color: var(--background-color)
+  background-color: var(--background-color);
+  padding-bottom: 90px;
+  position:relative;
 }
 
-.cards > ul > li > p {
-  padding-bottom: 50 px;
+.cards > div > div > p {
+  padding-bottom: 10 px;
   text-align: center;
 }
-.cards .cards-card-body {
+.cards .text {
   margin: 16px;
 }
 
-.cards .cards-card-body > p {
-  padding: 0.6em 0;
-}
 .cards .cards-card-image {
   line-height: 0;
 }
 
-.cards .cards-card-body > *:first-child {
+.cards .text > *:first-child {
   margin-top: 0;
 }
 
-.cards .cards-card-body .button-container {
+.cards .text .button-container {
   bottom: 30px;
+  position:absolute;
   width: 100%;
   left: 0;
-  padding-top: 30px;
 }
-.cards .cards-card-body .button {
+.cards .text .button {
   background: #fff;
   border: 2px solid #000;
   color: #000;
@@ -61,13 +60,13 @@
   width: auto;
 }
 
-.cards .cards-card-body .button:hover {
+.cards .text .button:hover {
   background: #000;
   color: #fff;
 }
-.cards > ul > li img {
-  padding-bottom: 30px;
+.cards > div > div img {
   padding-top: 30px;
+  padding-bottom: 10px;
   display: inline;
   width: 120px;
   height: auto;
