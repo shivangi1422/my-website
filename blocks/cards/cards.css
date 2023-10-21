@@ -1,31 +1,86 @@
-.cards > div {
+.cards > ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 16px;
+  text-align: center;
 }
 
-.cards > div > div {
+.cards > ul > li {
   border: 1px solid var(--highlight-background-color);
-  background-color: var(--background-color)
+  background-color: var(--background-color);
+  padding-bottom: 90px;
+  position: relative;
 }
 
-.cards .cards-card-body {
+
+.cards .text {
   margin: 16px;
 }
 
-.cards .cards-card-image {
-  line-height: 0;
+.cards .text .title {
+  font-size: 17px;
+  color: #0d233e;
+    font-family: Brown-Ald,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: normal;
+    margin: 0;
+    padding: 1em 0 0.5em;
 }
 
-.cards .cards-card-body > *:first-child {
+.cards .text > p {
+  padding: 0.6em 0;
+}
+.cards .cards-card-image {
+  line-height: 0;
+  padding-left: 90px;
+}
+
+.cards .text > *:first-child {
   margin-top: 0;
 }
 
-.cards > div > div img {
+.cards .text .button-container {
+  bottom: 30px;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  left: 0;
+  padding-top: 30px;
+  position: absolute;
+}
+.cards .text .button {
+  background: #fff;
+  border: 2px solid #000;
+  color: #000;
+  border-radius: 5px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Brown-Ald,Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 0;
+  padding: 0.8em 1.3em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background .3s;
+  vertical-align: middle;
+  width: auto;
+}
+
+.cards .text .button:hover {
+  background: #000;
+  color: #fff;
+}
+.cards > ul > li img {
+  padding-top: 30px;
+  display: block;
+  width: 120px;
+  height: auto;
 }
