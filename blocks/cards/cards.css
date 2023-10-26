@@ -4,7 +4,7 @@
   box-sizing: border-box;
   padding: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 16px;
   text-align: center;
 }
@@ -37,7 +37,7 @@
 }
 .cards .cards-card-image {
   line-height: 0;
-  padding-left: 90px;
+  padding-left: 140px;
 }
 
 .cards .text > *:first-child {
